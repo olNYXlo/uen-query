@@ -13,7 +13,7 @@ class ImportGovToLocal extends Component {
 
 
     queryHandler = () => {
-        Axios.get("https://data.gov.sg/api/action/datastore_search?resource_id=bdb377b8-096f-4f86-9c4f-85bad80ef93c&q=&limit=2000")
+        Axios.get("https://data.gov.sg/api/action/datastore_search?resource_id=bdb377b8-096f-4f86-9c4f-85bad80ef93c&q=&limit=5000")
         .then(res => {
             console.log("logging response data");
             console.log(res.data)
